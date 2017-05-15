@@ -41,7 +41,7 @@ Run and enter the docker instance
 ::
 
   envs="INSTALLER_TYPE={INSTALLER_TYPE} -e INSTALLER_IP={INSTALLER_IP}"
-  docker run --name qtip -id -e $envs opnfv/qtip
+  docker run -p [HOST_IP:]<HOST_PORT>:5000 --name qtip -id -e $envs opnfv/qtip
   docker exec -i -t qtip /bin/bash
 
 ``INSTALLER_TYPE`` should be one of OPNFV installer, e.g. apex, compass, daisy, fuel
@@ -61,6 +61,26 @@ be navigated to using the following command.
 
   cd repos/qtip
 
+Install from source code
+========================
+
+You may try out the latest version of QTIP by installing from source code. It is recommended to run it under Python
+``virtualenv`` so it won't screw system libraries.
+
+Run the following commands::
+
+  git clone https://git.opnfv.org/qtip && cd qtip
+  virtualenv .venv && source .venv/bin/activate
+  pip install -e .
+
+Use the following command to exit virtualenv::
+
+  deactivate
+
+Re-enter the virtualenv with::
+
+  cd <qtip-directory>
+  source .venv/bin/activate
 
 Environment configuration
 =========================
@@ -68,14 +88,14 @@ Environment configuration
 Hardware configuration
 ----------------------
 
-Qtip does not have specific hardware requriements, and it can runs over any
+QTIP does not have specific hardware requriements, and it can runs over any
 OPNFV installer.
 
 
 Jumphost configuration
 ----------------------
 
-Installer Docker on Jumphost, which is used for running Qtip image.
+Installer Docker on Jumphost, which is used for running QTIP image.
 
 You can refer to these links:
 

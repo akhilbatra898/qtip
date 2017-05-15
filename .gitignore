@@ -73,3 +73,7 @@ ChangeLog
 
 # unignore external data
 !/tests/data/**/*
+
+# integration data
+*.retry
+/tests/integration/workspace/

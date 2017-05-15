@@ -4,14 +4,15 @@
 .. (c) 2016 ZTE Corp.
 
 
-###############
+***************
 QTIP User Guide
-###############
+***************
 
 .. toctree::
    :maxdepth: 2
 
    overview.rst
+   ansible.rst
    cli.rst
    api.rst
-   qpi-compute.rst
+   compute.rst

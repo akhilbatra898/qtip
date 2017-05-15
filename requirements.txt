@@ -1,8 +1,12 @@
+colorama
+ansible
 click
-pyyaml
-paramiko
 connexion
+Jinja2
 numpy
+paramiko
 pbr
-ConfigParser
 prettytable
+six
+PyYAML
+humanfriendly

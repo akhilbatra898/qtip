@@ -3,15 +3,16 @@
 .. (c) 2016 ZTE Corp.
 
 
-##########################
-QTIP Design Specifications
-##########################
+********************
+QTIP Developer Guide
+********************
 
 .. toctree::
    :maxdepth: 2
 
    overview.rst
    arch.rst
+   framework.rst
    cli.rst
    api.rst
    compute-qpi.rst

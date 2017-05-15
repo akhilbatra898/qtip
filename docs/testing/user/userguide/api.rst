@@ -1,6 +1,10 @@
-**************
-QTIP API Usage
-**************
+.. This work is licensed under a Creative Commons Attribution 4.0 International License.
+.. http://creativecommons.org/licenses/by/4.0
+
+
+***************
+API User Manual
+***************
 
 QTIP consists of a number of benchmarking tools or metrics, grouped under QPI's. QPI's map to the different
 components of an NFVI ecosystem, such as compute, network and storage. Depending on the type of application,
@@ -15,8 +19,7 @@ Running
 
 After installing QTIP. API server can be run using command ``qtip-api`` on the local machine.
 
-All the resources and their corresponding operation details can be seen at ``/v1.0/ui``,
-on hosting server(``0.0.0.0:5000`` for the local machine).
+All the resources and their corresponding operation details can be seen at ``/v1.0/ui``.
 
 The whole API specification in json format can be seen at ``/v1.0/swagger.json``.
 
